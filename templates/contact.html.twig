@@ -1,0 +1,37 @@
+{% extends "layout.html.twig" %}
+
+{% block main %}
+
+
+	<div class="container">
+	<h1>
+		creer une liste
+	</h1>
+	<form method="POST" action="/traitement">
+		<input type="text" name="" placeholder='entrer le nom de la liste '>
+		<button class="button">
+			Ajouter la liste de taches
+		</button>
+		{% if success is defined %}
+			<p>{{message}}</p>
+		{% endif %}
+	</form>
+	</div>
+	<div>
+	<h1>
+		ajouter une tache
+	</h1>
+	<form method="POST" action="/traitement">
+		<input type="text" name="" placeholder='entrer une tache'>
+		<button class="button">
+			Ajouter la tache
+		</button>
+		{% if success is defined %}
+			<p>{{message}}</p>
+		{% endif %}
+	</form>
+	</div>
+
+
+	
+{% endblock %}

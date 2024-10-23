@@ -1,0 +1,38 @@
+.container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px; /* Espace entre les deux formulaires */
+}
+
+.container div {
+    flex: 1; /* Pour que chaque div prenne la même largeur */
+    padding: 10px;
+    border: 1px solid #ccc; /* Pour voir la séparation des divs */
+    border-radius: 5px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    margin-bottom: 10px;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.button {
+    padding: 10px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #0056b3;
+}
